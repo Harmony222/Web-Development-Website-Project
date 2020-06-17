@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "CS290 website project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harmony Scarlet",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "forever": "^2.0.0",
+    "handlebars": "^4.7.6",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "engines": {
+    "node": "6.10.2",
+    "npm": "3.10.10"
+  }
+}

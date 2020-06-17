@@ -1,0 +1,122 @@
+<div id="exchangeouterdiv1">
+  <div class="ui teal inverted segment colorboxes">
+    <div class="ui inverted segment" id="exchangeForm">
+    <form class="ui large inverted form" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php"
+        method="POST">
+      <h3 class="ui dividing header">Request Plant Exchange</h3>
+        <div class="field">
+          <label>Name</label>
+          <div class="two fields">
+            <div class="field">
+              <input type="text" name="first-name" placeholder="First Name">
+            </div>
+            <div class="field">
+              <input type="text" name="last-name" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <label>E-mail</label>
+              <input type="email" name="email" placeholder="myEmail@email.com">
+          </div>
+          <div class="field"> 
+            <label>Phone Number</label>
+              <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          </div>
+        </div>
+        <div class="field">
+          <label>Select the plant you would like to exchange with.</label>
+          <select name="plant" class="ui fluid dropdown" id="selectplant">
+            <option value="">Select a plant.</option>
+            {{#each data}}
+            <option value="{{this.contactEmail}}"> {{this.name}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="field">
+          <label>Please describe your plant you are offering.</label>
+          <textarea name="exchangeInfo" rows="2"></textarea>
+        </div>  
+        <div class="field">
+          <label for="exchangeFile">Please upload a picture of your plant.</label>
+          <input type="file" id="exchangeFile" name="exchangeFile">
+        </div>
+        <div class="field">
+          <button type="submit" class="ui inverted basic teal button" value="Submit"><i class="leaf icon"></i>Submit</button>
+          <p id="contactemail"></p>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+<div id="exchangeouterdiv2">
+  <div class="ui yellow inverted segment colorboxes">
+    <div id="postFormdiv" class="ui inverted segment">
+    <form id="postForm" class="ui large inverted form">
+      <h3 class="ui dividing header">Add Your Plant to the Purchase/Exchange Page</h3>
+        <div class="field">
+          <label>Your Name</label>
+            <div class="field">
+              <input type="text" name="contactName" placeholder="First Name + Last Name">
+            </div>
+        </div>
+        <div class="field">
+          <label>E-mail</label>
+            <div class="field">
+              <input type="email" name="contactEmail" placeholder="myEmail@email.com">          
+            </div>
+        </div>
+        <div class="three fields">
+          <div class="field">
+            <label>Plant Name</label>
+              <div class="field">
+                <input type="text" name="name" placeholder="Plant Name">
+              </div>
+          </div>
+          <div class="field">
+            <label>Quantity Available</label>
+              <div class="field">
+                <input type="number" name="quantity" placeholder="Quantity">
+              </div>
+          </div> 
+          <div class="field">
+            <label>Price</label>
+              <div class="field">
+                <input type="number" name="price" placeholder="Price">
+              </div>
+          </div> 
+        </div>
+        <label>Please indicate if you would like to make your plant available to exchange, purchase, or both.</label>
+        <div class="inline field">
+          <div class="ui checkbox">
+            <input type="checkbox" tabindex="0" class="hidden" name="exchange">
+            <label>Exchange</label>
+          </div>
+          <div class="ui checkbox">
+            <input type="checkbox" tabindex="0" class="hidden" name="purchase">
+            <label>Purchase</label>
+          </div>
+        </div>
+        <div class="field">
+          <label>Please describe your plant.</label>
+          <textarea name="depth" rows="2"></textarea>
+        </div> 
+        <div class="field">
+          <label>Image URL</label>
+            <div class="field">
+              <input type="text" name="image" value="/img/defaultImage.jpg" placeholder="http://imageurl.com" >
+            </div>
+        </div> 
+        <div class="field">
+          <button id="postsubmit" type="submit" class="ui inverted basic yellow button" value="Add Plant"><i class="leaf icon"></i>Submit</button>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+<script src="/js/exchange.js"></script>
+

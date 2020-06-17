@@ -1,0 +1,236 @@
+body {
+    background-color: #EDE7DC;
+    margin: 0;
+}
+
+.carousel {
+  width: 750px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.carousel img {
+  border-radius: 20px;
+  object-fit: cover;
+  width: 750px;
+  height: 500px;
+  background-color: #8A8A8A;
+}
+
+.slides {
+  position: absolute;
+  transition: opacity 1.5s;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.slides.fadeIn {
+  opacity: 1;
+}
+
+.prev, .next, .pause {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  width: auto;
+}
+
+#pause, #prev, #next {
+  transition: color 0.5s ease;
+}
+
+.pause {
+  left: 48%;
+  margin-bottom: 10px;
+}
+
+.next {
+  right: 0;
+}
+
+.dots {
+  text-align: center;
+  width: 750px;
+  margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 6px;
+  background-color: black;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+
+.selected, .dot:hover {
+  background-color: #A0A0A0;
+}
+
+.prev i:hover, .next i:hover, .pause i:hover {
+  color:#A0A0A0;
+}
+
+.slideText {
+  color: white;
+  position: absolute;
+  top: 5px;
+  z-index: 1;
+}
+
+.slideText.left {
+  left: 10px;
+}
+
+.slideText.right {
+  right: 10px;
+  font-size: 0.6em;
+}
+
+.imgEducation, .imgPurchase {
+  font-size: 0.6em;
+  line-height: 1em;
+  color: grey;
+}
+
+#homeTitle, #mainInfo, #homeRight div {
+  border-radius: 20px;
+  background-color: white;
+  padding: 18px;
+  margin: 10px;
+}
+
+#homeLeft {
+  grid-area: left;
+}
+
+#homeRight {
+  grid-area: right;
+}
+
+.homeText.container {
+  width: 750px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 375px 375px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "left right"
+}
+
+#mainInfo ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#exchangeouterdiv1, #exchangeouterdiv2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.colorboxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  #EDE7DC;
+  width: 45%;
+  margin: auto;
+}
+
+#exchangeForm, #postFormdiv {
+  background-color: #8A8A8A;
+  width: 98%;
+  margin: auto;
+  box-shadow: 0px 0px 8px black;
+}
+
+#exchangeForm h3, #postFormdiv h3 {
+  color: white;
+}
+
+.purchase {
+  width: 80%;
+  margin: auto;
+  list-style: none;
+}
+
+.imageDiv {
+  min-width: 375px;
+}
+.plantitem img {
+  width: auto;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.plantitem {
+  display: flex;
+  margin: 20px;
+}
+
+.plantcontent {
+  width: 250px;
+  margin: 0 20px;
+}
+
+.moreinfo div {
+  width: 300px; 
+  height: 250px;
+  line-height: 3em;
+  overflow: auto;
+  padding: 5px 20px;
+  margin: 0 20px;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.plantcontent p {
+  margin-bottom: 0.4em;
+}
+
+.plantcontent h4 {
+  margin: 0.4em 0 0.8em;
+}
+
+#snake1 {
+  height: 600px;
+  width: auto;
+}
+
+#learn {
+  width: 60%;
+  margin: auto;
+}
+
+#learnmore{
+  margin-left: 20px;
+}
+
+#morebutton {
+  width: 140px;
+}
+
+#moreicon {
+  margin-left: 10px;
+}
+
+.ui.items>.item .extra {
+  margin-bottom: 12px;
+}
+
+#contactemail {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
