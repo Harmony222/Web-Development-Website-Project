@@ -157,6 +157,7 @@ body {
 .purchase {
   width: 80%;
   margin: auto;
+  margin-top: 4.5em;
   /* list-style: none; */
 }
 
@@ -213,6 +214,11 @@ body {
   width: 80%;
   margin: auto;
 }
+
+#menu {
+  margin-bottom: 20px;
+}
+
 .description .header, .extra .header {
   color:#375a5b;
   font-weight: bold;
@@ -252,5 +258,8 @@ body {
 }
 
 .ui.large.image img {
-  width: 380px;
+  width: 350px;
 }
+
+
+
