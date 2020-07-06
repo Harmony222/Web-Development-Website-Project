@@ -157,7 +157,6 @@ body {
 .purchase {
   width: 80%;
   margin: auto;
-  margin-top: 4.5em;
   /* list-style: none; */
 }
 
@@ -261,5 +260,8 @@ body {
   width: 350px;
 }
 
-
+.ui.segment {
+  font-size: 0.5rem;
+  margin-bottom: 2.5rem;
+}
 
