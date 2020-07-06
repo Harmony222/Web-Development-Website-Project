@@ -61,7 +61,7 @@ app.listen(process.env.PORT || app.get('port'), function(){
 });
 
 Handlebars.registerHelper('trimString', function(fullString) {
-    var shortString = fullString.substring(0,50);
+    var shortString = fullString.substring(0,30);
     var cleanString = shortString.replace( /(<([^>]+)>)/ig, '');
     return new Handlebars.SafeString(cleanString);
 })

@@ -1,14 +1,26 @@
 [
     {
-        "name": "Succulent 1",
-        "quantity": "2",
+        "name": "African Violet",
+        "quantity": "6",
+        "price": "7.50",
+        "exchange": "1",
+        "purchase": "1",
+        "brief": "2-inch pot African Violets.",
+        "depth": "<p>African Violet plants in 2 inch pots.</p> <p>African Violets with beautiful dark green leaves with red-purple undersides. They produce violet-blue flowers.</p><p> Light: moderate to bright, indirect light <p>Allow soil around roots to dry out before watering to encourage blooming. Avoid getting water on the leaves as this can cause spotting damage - consider watering from the bottom up. <p>Fertilize half strength every 2 weeks, or use a 'constant feed' method. <p>African Violets bloom best when they are pot bound. Pot diameter should be 1/3 the spread of the leaf span. Repot every 1-2 years but not necessarily in a larger pot.",
+        "contactName": "Harmony",
+        "contactEmail": "harmony224@hotmail.com",
+        "image": "/img/african_violet.jpg"
+    },
+    {
+        "name": "Crassula perforata",
+        "quantity": "5",
         "price": "5.60",
         "exchange": "1",
         "purchase": "1",
-        "brief": "Lorem ipsum dolor sit amet",
-        "depth": "<p>Lorem ipsum dolor sit amet, per utamur fuisset liberavisse ex.</p><p>Per nostro alterum ex, vis cu nisl phaedrum. Iuvaret vivendum perfecto et ius. Ne affert vocent duo. Ad nam simul efficiendi, mel id noluisse deseruisse, cum ei dicunt aperiri. Sed ne alia erroribus, homero euismod consequuntur te nec.</p> <p>Alii graeci eripuit eu nec, ei qui liberavisse vituperatoribus. Ut wisi doming interesset pro, ad nam illum similique rationibus. Te admodum salutatus quo, et vel mutat munere commodo. Sed quis facilis ut.</p><p>Et laudem labitur facilisi nec, in cum platonem vulputate neglegentur, est alii populo sententiae in. Diam decore corrumpit ei eos, nec delectus conceptam eu. Eligendi definiebas vix id, dolorum intellegebat delicatissimi pro id, ne usu minim audiam. Nec doming possit no.</p?",
-        "contactName": "Jim", 
-        "contactEmail": "jim.h@hotmail.com", 
+        "brief": "AKA String of Buttons",
+        "depth": "<p>Crassula perforata, also known as String of Buttons, in 2 inch pots. <p> Fast growing succulent with stems and leaves that appear stacked on top of each other. Stems grow upright at first and then hang down over time. <p> Light: full sun or light shade. <p> Drought tolerant. Water every 7-10 days in the summer, less often in winter. Allow top inch of soil to dry between waterings. ",
+        "contactName": "Harmony", 
+        "contactEmail": "harmony224@hotmail.com", 
         "image": "https://cdn.pixabay.com/photo/2016/11/29/04/42/airy-1867373__480.jpg",
         "imageCredit": "Image by Pexels from Pixabay"
     },

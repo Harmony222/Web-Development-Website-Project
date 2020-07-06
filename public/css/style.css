@@ -157,19 +157,20 @@ body {
 .purchase {
   width: 80%;
   margin: auto;
-  list-style: none;
+  /* list-style: none; */
 }
 
-.imageDiv {
+/* .imageDiv {
   min-width: 375px;
+  max-width: 375px;
 }
 .plantitem img {
   width: auto;
   height: 250px;
   border-radius: 20px;
-}
+} */
 
-.plantitem {
+/* .plantitem {
   display: flex;
   margin: 20px;
 }
@@ -177,15 +178,17 @@ body {
 .plantcontent {
   width: 250px;
   margin: 0 20px;
+} */
+.plantcontent {
+  max-height: 260px;
 }
 
 .moreinfo div {
-  width: 300px; 
-  height: 250px;
+  max-width: 450px; 
+  max-height: 260px;
   line-height: 3em;
   overflow: auto;
   padding: 5px 20px;
-  margin: 0 20px;
   background-color: white;
 }
 
@@ -207,12 +210,21 @@ body {
 }
 
 #learn {
-  width: 60%;
+  width: 80%;
   margin: auto;
+}
+.description .header, .extra .header {
+  color:#375a5b;
+  font-weight: bold;
 }
 
 #learnmore{
   margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#learnmoreouter {
+  margin-top: 10px;
 }
 
 #morebutton {
@@ -233,4 +245,12 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.ui.big.image img {
+  width: 500px;
+}
+
+.ui.large.image img {
+  width: 380px;
 }
