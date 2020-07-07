@@ -2,6 +2,7 @@ var express = require('express');
 var exphbs = require('express-handlebars');
 var Handlebars = require('handlebars');
 var bodyParser = require('body-parser');
+var CORS = require('cors');
 
 var fs = require('fs');
 var data = fs.readFileSync('public/plantInfo.json', 'utf8');
@@ -16,7 +17,7 @@ app.set('port', 23566);
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-
+app.use(CORS())
 
 app.get('/', function(req, res) {
     res.render('home', {active: {home: true}});
