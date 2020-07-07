@@ -1,13 +1,6 @@
 <div class="purchase">
-      <div class="ui large rounded image imageDiv">
-        <img src="/img/africanviolet2.jpeg">
-
-      </div>
 <div class="ui three column stackable grid container">
-
-{{!-- <ul class="purchase"> --}}
   {{#each data}}
-  {{!-- <div class="row"> --}}
     <div class="six wide column">
       <div class="ui large rounded image imageDiv">
         <img src="{{this.image}}">
@@ -17,24 +10,23 @@
     <div class="four wide column">
       <div class="plantcontent">
         <h4>{{this.name}}</h4>
-
           <p>Price: ${{this.price}}</p>
           <p>Quantity Available: &nbsp; {{this.quantity}}</p>
           <div>
-          {{#if this.exchange}}
-            <i class="check icon"></i>
-          {{else}}
-            <i class="times icon"></i>
-          {{/if}} 
-          <label>Exchange</label>               
+            {{#if this.exchange}}
+              <i class="check icon"></i>
+            {{else}}
+              <i class="times icon"></i>
+            {{/if}} 
+            <label>Exchange</label>               
           </div>
           <div>
-          {{#if this.purchase}}
-            <i class="check icon"></i>
-          {{else}}
-            <i class="times icon"></i>
-          {{/if}} 
-          <label>Purchase</label>     
+            {{#if this.purchase}}
+              <i class="check icon"></i>
+            {{else}}
+              <i class="times icon"></i>
+            {{/if}} 
+            <label>Purchase</label>     
           </div>
           <p>Contact: &nbsp;{{this.contactEmail}}</p>
           <p>Description: &nbsp; {{trimString this.brief}}</p>
@@ -53,57 +45,8 @@
         </div>
       </div>
     </div> 
-
-{{/each}}
+  {{/each}}
 </div>
 </div>
-  {{!-- <li>
-    <div class="plantitem">
-      <div class="image imageDiv">
-        <img src="{{this.image}}">
-        <div class="imgPurchase">{{this.imageCredit}}</div>
-      </div>
-      <div class="plantcontent">
-        <h4>{{this.name}}</h4>
-
-          <p>Price: ${{this.price}}</p>
-          <p>Quantity Available: &nbsp; {{this.quantity}}</p>
-          <div>
-          {{#if this.exchange}}
-            <i class="check icon"></i>
-          {{else}}
-            <i class="times icon"></i>
-          {{/if}} 
-          <label>Exchange</label>               
-          </div>
-          <div>
-          {{#if this.purchase}}
-            <i class="check icon"></i>
-          {{else}}
-            <i class="times icon"></i>
-          {{/if}} 
-          <label>Purchase</label>     
-          </div>
-          <p>Contact: &nbsp;{{this.contactEmail}}</p>
-          <p>Description: &nbsp; {{this.brief}}</p>
-        <div class="readmore">
-          <button class="ui small grey button" id="morebutton">
-            <span class="moretext">Read More</span>
-            <span class="moreicon"><i class="right chevron icon"></i></span>
-          </button>
-        </div>
-      </div>
-      <div class="moreinfo hidden">
-        <div>
-          <p>{{{this.depth}}}</p>
-        </div>
-      </div>
-
-    </div>
-  </li> --}}
-  {{!-- {{/each}}
-{{!-- </ul> --}}
-</div> --}}
-
 <script src="/js/purchase.js"></script>
 
